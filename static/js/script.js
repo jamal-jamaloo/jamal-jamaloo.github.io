@@ -27,7 +27,7 @@ $(document).ready(function () {
   //global variables
   action_name = "action_greet_user";
   sender_id = "jitesh97";
-  myUrl = "http://16c7333dbfef.ngrok.io";    
+  myUrl = "https://16c7333dbfef.ngrok.io";    
 
   //if you want the bot to start the conversation
 //   custom_action_trigger();
@@ -85,7 +85,7 @@ function action_trigger() {
 function custom_action_trigger() {
   // send an event to the bot, so that bot can start the conversation by greeting the user
   $.ajax({
-    url: `http://2e7fcd55f601.ngrok.io/webhook/`,
+    url: `${myUrl}/webhook/`,
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
