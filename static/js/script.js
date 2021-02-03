@@ -1,4 +1,7 @@
 //Bot pop-up intro
+
+const myUrl = "http://16c7333dbfef.ngrok.io" 
+      
 document.addEventListener("DOMContentLoaded", function () {
   var elemsTap = document.querySelector(".tap-target");
   var instancesTap = M.TapTarget.init(elemsTap, {});
@@ -54,7 +57,7 @@ function restartConversation() {
 function action_trigger() {
   // send an event to the bot, so that bot can start the conversation by greeting the user
   $.ajax({
-    url: `http://2e7fcd55f601.ngrok.io/${sender_id}/execute`,
+    url: `${myUrl}/${sender_id}/execute`,
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
@@ -192,7 +195,7 @@ function scrollToBottomOfResults() {
 //============== send the user message to rasa server =============================================
 function send(message) {
   $.ajax({
-    url: "http://2e7fcd55f601.ngrok.io/webhooks/rest/webhook",
+    url: "${myUrl}/webhooks/rest/webhook",
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({ message: message, sender: sender_id }),
