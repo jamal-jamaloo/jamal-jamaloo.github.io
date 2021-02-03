@@ -1,6 +1,4 @@
 //Bot pop-up intro
-
-const myUrl = "http://16c7333dbfef.ngrok.io" 
       
 document.addEventListener("DOMContentLoaded", function () {
   var elemsTap = document.querySelector(".tap-target");
@@ -29,6 +27,7 @@ $(document).ready(function () {
   //global variables
   action_name = "action_greet_user";
   sender_id = "jitesh97";
+  myUrl = "http://16c7333dbfef.ngrok.io";    
 
   //if you want the bot to start the conversation
 //   custom_action_trigger();
