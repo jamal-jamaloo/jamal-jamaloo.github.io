@@ -54,7 +54,7 @@ function restartConversation() {
 function action_trigger() {
   // send an event to the bot, so that bot can start the conversation by greeting the user
   $.ajax({
-    url: `http://188.166.39.110:5002/webhooks/rest/webhook/${sender_id}/execute`,
+    url: `http://2e7fcd55f601.ngrok.io/webhooks/rest/webhook/${sender_id}/execute`,
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
