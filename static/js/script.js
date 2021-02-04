@@ -245,7 +245,7 @@ function setBotResponse(response) {
     hideBotTyping();
     if (response.length < 1) {
       //if there is no response from Rasa, send  fallback message to the user
-      var fallbackMsg = "Jag är mållös...;
+      var fallbackMsg = "Jag är mållös...";
 
       var BotResponse =
         '<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">' +
