@@ -85,7 +85,7 @@ function action_trigger() {
 function custom_action_trigger() {
   // send an event to the bot, so that bot can start the conversation by greeting the user
   $.ajax({
-    url: `${myUrl}/webhook/`,
+    url: `${myUrl}/webhooks/rest/webhook/`,
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
