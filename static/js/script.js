@@ -228,6 +228,19 @@ function send(message) {
 
 //=================== set bot response in the chats ===========================================
 function setBotResponse(response) {
+  function setupText(derText) {
+    derText = derText.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    //check for links [text](url)
+    let elements = derText.match(/\[.*?\)/g);
+    if (elements != null && elements.length > 0){
+      for(el of elements){
+        let txt = el.match(/\[(.*?)\]/)[1];//get only the txt
+        let url = el.match(/\((.*?)\)/)[1];//get only the link
+        derText = derText.replace(el,'<a href="'+url+'" target="_blank">'+txt+'</a>')
+      }
+    }
+    return derText;
+  }
   //display bot response after 500 milliseconds
   setTimeout(function () {
     hideBotTyping();
@@ -250,7 +263,7 @@ function setBotResponse(response) {
           if (response[i].text != null) {
             var BotResponse =
               '<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">' +
-              response[i].text +
+              setupText(response[i].text) +
               '</p><div class="clearfix"></div>';
             $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
           }
