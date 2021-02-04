@@ -206,7 +206,7 @@ function send(message) {
         $("#userInput").prop("disabled", false);
 
         //if you want the bot to start the conversation after restart
-        custom_action_tigger();
+        custom_action_trigger();
         return;
       }
       setBotResponse(botResponse);
