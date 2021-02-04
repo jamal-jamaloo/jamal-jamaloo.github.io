@@ -27,7 +27,7 @@ $(document).ready(function () {
   //global variables
   action_name = "action_greet_user";
   sender_id = "jitesh97";
-  myUrl = "https://34781d48b621.ngrok.io";    
+  myUrl = "https://4e5d9bd8c1b1.ngrok.io";    
 
   //if you want the bot to start the conversation
 //   custom_action_trigger();
