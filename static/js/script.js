@@ -246,7 +246,7 @@ function setBotResponse(response) {
     hideBotTyping();
     if (response.length < 1) {
       //if there is no response from Rasa, send  fallback message to the user
-      var fallbackMsg = "I am facing some issues, please try again later!!!";
+      var fallbackMsg = "Jamal är en halvö mellan Obviken och Karahavet i nordvästra Sibirien i Ryssland. Jamal är 700 kilometer lång och 240 kilometer bred och är uppbyggd av sand och lera.";
 
       var BotResponse =
         '<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">' +
