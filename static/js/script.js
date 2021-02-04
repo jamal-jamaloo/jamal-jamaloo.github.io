@@ -56,7 +56,7 @@ function restartConversation() {
 function action_trigger() {
   // send an event to the bot, so that bot can start the conversation by greeting the user
   $.ajax({
-    url: `${myUrl}/${sender_id}/execute`,
+    url: `${myUrl/sender_id}/execute`,
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({
@@ -194,7 +194,7 @@ function scrollToBottomOfResults() {
 //============== send the user message to rasa server =============================================
 function send(message) {
   $.ajax({
-    url: "${myUrl}/webhooks/rest/webhook",
+    url: "myUrl/webhooks/rest/webhook",
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify({ message: message, sender: sender_id }),
