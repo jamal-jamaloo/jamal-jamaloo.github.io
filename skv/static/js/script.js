@@ -18,7 +18,7 @@ $(document).ready(function () {
   $(".dropdown-trigger").dropdown();
 
   //initiate the modal for displaying the charts, if you dont have charts, then you comment the below line
-  $(".modal").modal();
+  // $(".modal").modal();
 
   //enable this if u have configured the bot to start the conversation.
   // showBotTyping();
@@ -30,6 +30,7 @@ $(document).ready(function () {
   myUrl = "https://a2cba0d28c14.ngrok.io"; 
   //if you want the bot to start the conversation
 //   custom_action_trigger();
+  send("/start") //automatically send intent on page load
 });
 
 // ========================== restart conversation ========================
