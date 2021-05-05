@@ -1,6 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
-    background: url('../img/body.jpg') no-repeat center center fixed;
+    background-color: white;
+    background: url('../img/toppide_21_v2.gif') no-repeat center center fixed;
     background-size: cover;
 }
 
