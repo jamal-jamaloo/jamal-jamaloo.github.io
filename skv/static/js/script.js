@@ -250,7 +250,7 @@ function setBotResponse(response) {
           if (response[i].text != null) {
             var BotResponse =
               '<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">' +
-              setupText(response[i].text) +
+              response[i].text +
               '</p><div class="clearfix"></div>';
             $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
           }
