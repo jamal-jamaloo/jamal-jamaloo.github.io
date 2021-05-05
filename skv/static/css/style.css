@@ -22,7 +22,7 @@ body {
 
 .chat_header {
     height: 60px;
-    background: rgb(90, 23, 238);
+    background: #005799;
     border-radius: 10px 10px 0px 0px;
     padding: 5px;
     font-size: 20px;
@@ -409,7 +409,7 @@ div.content_data::-webkit-scrollbar {
 
 .menuChips {
     display: block;
-    background: #2c53af;
+    background: #005799;
     color: #fff;
     text-align: center;
     padding: 5px;
