@@ -107,7 +107,7 @@ textarea-webkit-scrollbar {
     padding: 10px;
     float: right;
     margin-right: 0.5em;
-    background: #5a17ee;
+    background: #005799;
     color: white;
     margin-bottom: 0.15em;
     font-size: 13px;
@@ -159,7 +159,7 @@ textarea-webkit-scrollbar {
     padding: 5px;
     font-size: 20px;
     cursor: pointer;
-    color: #2b2bab;
+    color: #005799;
 }
 
 .imgProfile {
@@ -197,7 +197,7 @@ textarea-webkit-scrollbar {
 
 .dropdown-content li>a,
 .dropdown-content li>span {
-    color: #5a17ee;
+    color: #005799;
 }
 
 @keyframes animateElement {
