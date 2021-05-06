@@ -27,7 +27,7 @@ $(document).ready(function () {
   //global variables
   action_name = "action_greet_user";
   sender_id = "topp";
-  myUrl = "https://bc27dd3b9749.ngrok.io"; 
+  myUrl = "http://39f45b77a110.ngrok.io"; 
   //if you want the bot to start the conversation
 //   custom_action_trigger();
   send("/start") //automatically send intent on page load
